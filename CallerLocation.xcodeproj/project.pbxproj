@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36825F6018BC76A000F84D89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36825F5F18BC76A000F84D89 /* AudioToolbox.framework */; };
+		36825F6318BC77A900F84D89 /* WCAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 36825F6218BC77A900F84D89 /* WCAddressBook.m */; };
+		36825F6618BC77BC00F84D89 /* WCPhoneLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36825F6518BC77BC00F84D89 /* WCPhoneLocator.m */; };
+		36825F6918BC7FFE00F84D89 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36825F6818BC7FFE00F84D89 /* AddressBook.framework */; };
+		36825F6A18BC88A500F84D89 /* locations.db in Resources */ = {isa = PBXBuildFile; fileRef = 36825F6718BC77FB00F84D89 /* locations.db */; };
+		36825F6D18BC96A900F84D89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36825F6C18BC96A900F84D89 /* AVFoundation.framework */; };
 		369A0FAF18BC72D5008B0C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A0FAE18BC72D5008B0C0C /* Foundation.framework */; };
 		369A0FB118BC72D5008B0C0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A0FB018BC72D5008B0C0C /* CoreGraphics.framework */; };
 		369A0FB318BC72D5008B0C0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A0FB218BC72D5008B0C0C /* UIKit.framework */; };
@@ -14,13 +20,27 @@
 		369A0FBB18BC72D5008B0C0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FBA18BC72D5008B0C0C /* main.m */; };
 		369A0FBF18BC72D5008B0C0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FBE18BC72D5008B0C0C /* AppDelegate.m */; };
 		369A0FC218BC72D5008B0C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369A0FC018BC72D5008B0C0C /* Main.storyboard */; };
-		369A0FC518BC72D5008B0C0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FC418BC72D5008B0C0C /* ViewController.m */; };
 		369A0FC718BC72D5008B0C0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369A0FC618BC72D5008B0C0C /* Images.xcassets */; };
 		369A0FCE18BC72D5008B0C0C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A0FCD18BC72D5008B0C0C /* XCTest.framework */; };
 		369A0FCF18BC72D5008B0C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A0FAE18BC72D5008B0C0C /* Foundation.framework */; };
 		369A0FD018BC72D5008B0C0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A0FB218BC72D5008B0C0C /* UIKit.framework */; };
 		369A0FD818BC72D5008B0C0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 369A0FD618BC72D5008B0C0C /* InfoPlist.strings */; };
 		369A0FDA18BC72D5008B0C0C /* CallerLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FD918BC72D5008B0C0C /* CallerLocationTests.m */; };
+		369A0FF018BC7335008B0C0C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FE618BC7335008B0C0C /* FMDatabase.m */; };
+		369A0FF118BC7335008B0C0C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FE818BC7335008B0C0C /* FMDatabaseAdditions.m */; };
+		369A0FF218BC7335008B0C0C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FEA18BC7335008B0C0C /* FMDatabasePool.m */; };
+		369A0FF318BC7335008B0C0C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FEC18BC7335008B0C0C /* FMDatabaseQueue.m */; };
+		369A0FF418BC7335008B0C0C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FEF18BC7335008B0C0C /* FMResultSet.m */; };
+		369A0FF918BC7344008B0C0C /* MMPDeepSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FF718BC7344008B0C0C /* MMPDeepSleepPreventer.m */; };
+		369A0FFA18BC7344008B0C0C /* MMPSilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 369A0FF818BC7344008B0C0C /* MMPSilence.wav */; };
+		369A0FFE18BC741E008B0C0C /* WCCallCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A0FFD18BC741E008B0C0C /* WCCallCenter.m */; };
+		369A100118BC742F008B0C0C /* WCCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A100018BC742F008B0C0C /* WCCall.m */; };
+		369A100318BC7487008B0C0C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A100218BC7487008B0C0C /* libsqlite3.dylib */; };
+		369A100518BC748D008B0C0C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A100418BC748D008B0C0C /* CoreTelephony.framework */; };
+		369A100818BC74C3008B0C0C /* WCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A100718BC74C3008B0C0C /* WCUtil.m */; };
+		369A100B18BC755C008B0C0C /* WCCallInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A100A18BC755C008B0C0C /* WCCallInspector.m */; };
+		36A4E28D18BCD3FC00FE2F4F /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4E28C18BCD3FC00FE2F4F /* SettingTableViewController.m */; };
+		36D1DCEC18BDD393004670E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D1DCEB18BDD393004670E2 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36825F5F18BC76A000F84D89 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		36825F6118BC77A900F84D89 /* WCAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAddressBook.h; sourceTree = "<group>"; };
+		36825F6218BC77A900F84D89 /* WCAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAddressBook.m; sourceTree = "<group>"; };
+		36825F6418BC77BC00F84D89 /* WCPhoneLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPhoneLocator.h; sourceTree = "<group>"; };
+		36825F6518BC77BC00F84D89 /* WCPhoneLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhoneLocator.m; sourceTree = "<group>"; };
+		36825F6718BC77FB00F84D89 /* locations.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = locations.db; sourceTree = "<group>"; };
+		36825F6818BC7FFE00F84D89 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		36825F6C18BC96A900F84D89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		369A0FAB18BC72D5008B0C0C /* CallerLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallerLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369A0FAE18BC72D5008B0C0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		369A0FB018BC72D5008B0C0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +73,40 @@
 		369A0FBD18BC72D5008B0C0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		369A0FBE18BC72D5008B0C0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		369A0FC118BC72D5008B0C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		369A0FC318BC72D5008B0C0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		369A0FC418BC72D5008B0C0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		369A0FC618BC72D5008B0C0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		369A0FCC18BC72D5008B0C0C /* CallerLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallerLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		369A0FCD18BC72D5008B0C0C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		369A0FD518BC72D5008B0C0C /* CallerLocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallerLocationTests-Info.plist"; sourceTree = "<group>"; };
 		369A0FD718BC72D5008B0C0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		369A0FD918BC72D5008B0C0C /* CallerLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallerLocationTests.m; sourceTree = "<group>"; };
+		369A0FE518BC7335008B0C0C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		369A0FE618BC7335008B0C0C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		369A0FE718BC7335008B0C0C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		369A0FE818BC7335008B0C0C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		369A0FE918BC7335008B0C0C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		369A0FEA18BC7335008B0C0C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		369A0FEB18BC7335008B0C0C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		369A0FEC18BC7335008B0C0C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		369A0FED18BC7335008B0C0C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		369A0FEE18BC7335008B0C0C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		369A0FEF18BC7335008B0C0C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		369A0FF618BC7344008B0C0C /* MMPDeepSleepPreventer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPDeepSleepPreventer.h; sourceTree = "<group>"; };
+		369A0FF718BC7344008B0C0C /* MMPDeepSleepPreventer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPDeepSleepPreventer.m; sourceTree = "<group>"; };
+		369A0FF818BC7344008B0C0C /* MMPSilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MMPSilence.wav; sourceTree = "<group>"; };
+		369A0FFC18BC741E008B0C0C /* WCCallCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCallCenter.h; sourceTree = "<group>"; };
+		369A0FFD18BC741E008B0C0C /* WCCallCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCallCenter.m; sourceTree = "<group>"; };
+		369A0FFF18BC742F008B0C0C /* WCCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCall.h; sourceTree = "<group>"; };
+		369A100018BC742F008B0C0C /* WCCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCall.m; sourceTree = "<group>"; };
+		369A100218BC7487008B0C0C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		369A100418BC748D008B0C0C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		369A100618BC74C3008B0C0C /* WCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUtil.h; sourceTree = "<group>"; };
+		369A100718BC74C3008B0C0C /* WCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCUtil.m; sourceTree = "<group>"; };
+		369A100918BC755C008B0C0C /* WCCallInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCallInspector.h; sourceTree = "<group>"; };
+		369A100A18BC755C008B0C0C /* WCCallInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCallInspector.m; sourceTree = "<group>"; };
+		36A4E28B18BCD3FC00FE2F4F /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		36A4E28C18BCD3FC00FE2F4F /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		36D1DCEA18BDD393004670E2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		36D1DCEB18BDD393004670E2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +114,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36825F6D18BC96A900F84D89 /* AVFoundation.framework in Frameworks */,
+				36825F6918BC7FFE00F84D89 /* AddressBook.framework in Frameworks */,
+				36825F6018BC76A000F84D89 /* AudioToolbox.framework in Frameworks */,
+				369A100518BC748D008B0C0C /* CoreTelephony.framework in Frameworks */,
+				369A100318BC7487008B0C0C /* libsqlite3.dylib in Frameworks */,
 				369A0FB118BC72D5008B0C0C /* CoreGraphics.framework in Frameworks */,
 				369A0FB318BC72D5008B0C0C /* UIKit.framework in Frameworks */,
 				369A0FAF18BC72D5008B0C0C /* Foundation.framework in Frameworks */,
@@ -101,6 +160,11 @@
 		369A0FAD18BC72D5008B0C0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36825F6C18BC96A900F84D89 /* AVFoundation.framework */,
+				36825F6818BC7FFE00F84D89 /* AddressBook.framework */,
+				36825F5F18BC76A000F84D89 /* AudioToolbox.framework */,
+				369A100418BC748D008B0C0C /* CoreTelephony.framework */,
+				369A100218BC7487008B0C0C /* libsqlite3.dylib */,
 				369A0FAE18BC72D5008B0C0C /* Foundation.framework */,
 				369A0FB018BC72D5008B0C0C /* CoreGraphics.framework */,
 				369A0FB218BC72D5008B0C0C /* UIKit.framework */,
@@ -112,11 +176,13 @@
 		369A0FB418BC72D5008B0C0C /* CallerLocation */ = {
 			isa = PBXGroup;
 			children = (
+				369A0FE318BC7322008B0C0C /* Extend */,
+				369A0FFB18BC7400008B0C0C /* Telephony */,
 				369A0FBD18BC72D5008B0C0C /* AppDelegate.h */,
 				369A0FBE18BC72D5008B0C0C /* AppDelegate.m */,
 				369A0FC018BC72D5008B0C0C /* Main.storyboard */,
-				369A0FC318BC72D5008B0C0C /* ViewController.h */,
-				369A0FC418BC72D5008B0C0C /* ViewController.m */,
+				36A4E28B18BCD3FC00FE2F4F /* SettingTableViewController.h */,
+				36A4E28C18BCD3FC00FE2F4F /* SettingTableViewController.m */,
 				369A0FC618BC72D5008B0C0C /* Images.xcassets */,
 				369A0FB518BC72D5008B0C0C /* Supporting Files */,
 			);
@@ -150,6 +216,74 @@
 				369A0FD618BC72D5008B0C0C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		369A0FE318BC7322008B0C0C /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				36D1DCE918BDD38D004670E2 /* MBProgressHUD */,
+				369A0FF518BC7344008B0C0C /* MMPDeepSleepPreventer */,
+				369A0FE418BC7335008B0C0C /* FMDB */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		369A0FE418BC7335008B0C0C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				369A0FE518BC7335008B0C0C /* FMDatabase.h */,
+				369A0FE618BC7335008B0C0C /* FMDatabase.m */,
+				369A0FE718BC7335008B0C0C /* FMDatabaseAdditions.h */,
+				369A0FE818BC7335008B0C0C /* FMDatabaseAdditions.m */,
+				369A0FE918BC7335008B0C0C /* FMDatabasePool.h */,
+				369A0FEA18BC7335008B0C0C /* FMDatabasePool.m */,
+				369A0FEB18BC7335008B0C0C /* FMDatabaseQueue.h */,
+				369A0FEC18BC7335008B0C0C /* FMDatabaseQueue.m */,
+				369A0FED18BC7335008B0C0C /* FMDB.h */,
+				369A0FEE18BC7335008B0C0C /* FMResultSet.h */,
+				369A0FEF18BC7335008B0C0C /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		369A0FF518BC7344008B0C0C /* MMPDeepSleepPreventer */ = {
+			isa = PBXGroup;
+			children = (
+				369A0FF618BC7344008B0C0C /* MMPDeepSleepPreventer.h */,
+				369A0FF718BC7344008B0C0C /* MMPDeepSleepPreventer.m */,
+				369A0FF818BC7344008B0C0C /* MMPSilence.wav */,
+			);
+			path = MMPDeepSleepPreventer;
+			sourceTree = "<group>";
+		};
+		369A0FFB18BC7400008B0C0C /* Telephony */ = {
+			isa = PBXGroup;
+			children = (
+				36825F6718BC77FB00F84D89 /* locations.db */,
+				36825F6418BC77BC00F84D89 /* WCPhoneLocator.h */,
+				36825F6518BC77BC00F84D89 /* WCPhoneLocator.m */,
+				36825F6118BC77A900F84D89 /* WCAddressBook.h */,
+				36825F6218BC77A900F84D89 /* WCAddressBook.m */,
+				369A100618BC74C3008B0C0C /* WCUtil.h */,
+				369A100718BC74C3008B0C0C /* WCUtil.m */,
+				369A0FFF18BC742F008B0C0C /* WCCall.h */,
+				369A100018BC742F008B0C0C /* WCCall.m */,
+				369A0FFC18BC741E008B0C0C /* WCCallCenter.h */,
+				369A0FFD18BC741E008B0C0C /* WCCallCenter.m */,
+				369A100918BC755C008B0C0C /* WCCallInspector.h */,
+				369A100A18BC755C008B0C0C /* WCCallInspector.m */,
+			);
+			name = Telephony;
+			path = CallerLocation/Telephony;
+			sourceTree = SOURCE_ROOT;
+		};
+		36D1DCE918BDD38D004670E2 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				36D1DCEA18BDD393004670E2 /* MBProgressHUD.h */,
+				36D1DCEB18BDD393004670E2 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +362,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36825F6A18BC88A500F84D89 /* locations.db in Resources */,
 				369A0FC718BC72D5008B0C0C /* Images.xcassets in Resources */,
 				369A0FB918BC72D5008B0C0C /* InfoPlist.strings in Resources */,
 				369A0FC218BC72D5008B0C0C /* Main.storyboard in Resources */,
+				369A0FFA18BC7344008B0C0C /* MMPSilence.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +385,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369A0FC518BC72D5008B0C0C /* ViewController.m in Sources */,
+				369A0FF218BC7335008B0C0C /* FMDatabasePool.m in Sources */,
 				369A0FBF18BC72D5008B0C0C /* AppDelegate.m in Sources */,
+				369A0FF318BC7335008B0C0C /* FMDatabaseQueue.m in Sources */,
+				36A4E28D18BCD3FC00FE2F4F /* SettingTableViewController.m in Sources */,
 				369A0FBB18BC72D5008B0C0C /* main.m in Sources */,
+				36825F6618BC77BC00F84D89 /* WCPhoneLocator.m in Sources */,
+				369A0FF918BC7344008B0C0C /* MMPDeepSleepPreventer.m in Sources */,
+				369A100118BC742F008B0C0C /* WCCall.m in Sources */,
+				369A0FFE18BC741E008B0C0C /* WCCallCenter.m in Sources */,
+				369A100B18BC755C008B0C0C /* WCCallInspector.m in Sources */,
+				369A0FF018BC7335008B0C0C /* FMDatabase.m in Sources */,
+				369A0FF418BC7335008B0C0C /* FMResultSet.m in Sources */,
+				369A0FF118BC7335008B0C0C /* FMDatabaseAdditions.m in Sources */,
+				369A100818BC74C3008B0C0C /* WCUtil.m in Sources */,
+				36825F6318BC77A900F84D89 /* WCAddressBook.m in Sources */,
+				36D1DCEC18BDD393004670E2 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +609,7 @@
 				369A0FDF18BC72D5008B0C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		369A0FE018BC72D5008B0C0C /* Build configuration list for PBXNativeTarget "CallerLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +618,7 @@
 				369A0FE218BC72D5008B0C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

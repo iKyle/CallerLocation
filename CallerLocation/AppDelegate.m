@@ -7,12 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "MMPDeepSleepPreventer.h"
+#import "WCCallInspector.h"
+#import "WCPhoneLocator.h"
+
+@interface AppDelegate()
+
+@property (nonatomic, strong) MMPDeepSleepPreventer *sleepPreventer;
+@property (nonatomic, assign) UIBackgroundTaskIdentifier bgTaskID;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // prevent sleep
+    self.sleepPreventer = [[MMPDeepSleepPreventer alloc] init];
+    
+    // 必须正确处理background task，才能在后台发声
+    self.bgTaskID = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        [[UIApplication sharedApplication] endBackgroundTask:self.bgTaskID];
+        self.bgTaskID = UIBackgroundTaskInvalid;
+    }];
+    
+    [[WCCallInspector sharedInspector]startInspect]; //开始监听来电事件
+    
     return YES;
 }
 							
@@ -26,11 +47,15 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [self.sleepPreventer startPreventSleep];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    [self.sleepPreventer stopPreventSleep];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
