@@ -82,6 +82,10 @@
         return;
     }
     
+    if (self.incomingPhoneNumber) { //不为nil代表针对当前通话下面的操作走过一次了，不需要重新走过。
+        return;
+    }
+    
     NSString *number = call.phoneNumber;
     self.incomingPhoneNumber = number;
     
