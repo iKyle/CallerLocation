@@ -41,6 +41,7 @@
 		369A100B18BC755C008B0C0C /* WCCallInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A100A18BC755C008B0C0C /* WCCallInspector.m */; };
 		36A4E28D18BCD3FC00FE2F4F /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4E28C18BCD3FC00FE2F4F /* SettingTableViewController.m */; };
 		36D1DCEC18BDD393004670E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D1DCEB18BDD393004670E2 /* MBProgressHUD.m */; };
+		36EC112718E6E43B007F2609 /* locations.txt in Resources */ = {isa = PBXBuildFile; fileRef = 36EC112618E6E43B007F2609 /* locations.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		36A4E28C18BCD3FC00FE2F4F /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		36D1DCEA18BDD393004670E2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		36D1DCEB18BDD393004670E2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		36EC112618E6E43B007F2609 /* locations.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = locations.txt; path = ../locations.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		369A0FFB18BC7400008B0C0C /* Telephony */ = {
 			isa = PBXGroup;
 			children = (
+				36EC112618E6E43B007F2609 /* locations.txt */,
 				36825F6718BC77FB00F84D89 /* locations.db */,
 				36825F6418BC77BC00F84D89 /* WCPhoneLocator.h */,
 				36825F6518BC77BC00F84D89 /* WCPhoneLocator.m */,
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36825F6A18BC88A500F84D89 /* locations.db in Resources */,
+				36EC112718E6E43B007F2609 /* locations.txt in Resources */,
 				369A0FC718BC72D5008B0C0C /* Images.xcassets in Resources */,
 				369A0FB918BC72D5008B0C0C /* InfoPlist.strings in Resources */,
 				369A0FC218BC72D5008B0C0C /* Main.storyboard in Resources */,
